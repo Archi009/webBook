@@ -5,9 +5,19 @@
 	<title>웹 폼</title>
 </head>
 <body>
-	<form>
+	<form action="order.html" >
     <!-- Do it! 폼 안에 자바스크립트 실행 버튼 삽입하기 -->
-    
-  </form>
+		<!-- <input type="submit" value="전송" -->
+    <!-- <input type="submit" value="전송"> -->
+		<button onclick="shoong">슝</button>
+	</form>
+	
 </body>
+<script>
+	function shoong() {
+		event.preventDefault();
+		console.log('폼전송');
+		// document.forms[0].submit();
+	}
+</script>
 </html>

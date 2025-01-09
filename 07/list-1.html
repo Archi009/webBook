@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>불릿과 번호 바꾸기</title>
   <style>
     /* Do it! 목록의 불릿과 번호 바꾸기 */
+    ul {
+      list-style-type: none;
+    }
 
+    ol:nth-last-of-type(1) {
+      list-style-type: upper-roman;
+    }
+    ol:nth-of-type(2) {
+      /* list-style-image: url(splotch-solid.svg);
+      list-style-position: inside; */
+      list-style: url(splotch-solid.svg) inside;
+    }
   </style>
 </head>
+
 <body>
   <h1>도서 시리즈</h1>
   <ul>
@@ -23,5 +36,13 @@
     <li>DCM 프로 사진가</li>
     <li>데이터과학 시리즈</li>
   </ol>
+  
+  <ol>
+    <li>Do it! 시리즈</li>
+    <li>된다 시리즈</li>
+    <li>DCM 프로 사진가</li>
+    <li>데이터과학 시리즈</li>
+  </ol>
 </body>
+
 </html>

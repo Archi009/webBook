@@ -4,12 +4,29 @@
 		<meta charset="UTF-8">
 		<title>블록 레벨과 인라인 레벨</title>
 		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body{
+				margin: 0;
+			}
 			body  * {  /* body 하위에 있는 모든 요소에 대해 */
 				border:1px solid blue;
+			}
+			h1 {
+				width: 160px;
+				border: 1px solid green;
+				box-shadow: 10px -10px 5px #ccc;
+			}
+			h1:hover {
+				background-color: red;
+				color: aliceblue;
 			}
 			.accent {
 				color:red;
 				font-weight:bold;
+				display: inline;
 			}
 		</style>
 	</head>

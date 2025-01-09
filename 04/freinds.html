@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>친한 친구 목록</title>
+  <style>
+    img {
+      width: 50px;
+      height: 70px;
+    }
+    table {
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+  }
+  th, td {
+    border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444;
+    padding: 10px;
+  }
+  th:first-child, td:first-child {
+    border-left: none;
+  }
+  th {
+    background-color: lightgray;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h3>친한친구</h3>
+  </header>
+  <main>
+    <!--표(table) 3명 친구의 연락처, 주소-->
+    <table border="2px">
+      <caption>친구 목록</caption>
+      <!--타이틀 thead-->
+      <thead>
+        <tr>
+          <!--행-->
+          <th>이름</th>
+          <th>연락처</th>
+          <th>주소</th>
+          <th>사진</th>
+        </tr>
+      </thead>
+      <!--데이터 tbody-->
+      <tbody>
+        <tr>
+          <td>사람1</td>
+          <td rowspan="3">010-2222-2222</td>
+          <td>대구 중구 200번지</td>
+          <td><img src="vani.jpg" alt=""></td>
+        </tr>
+        <tr>
+          <td>사람2</td>
+         
+          <td colspan="2">대구 중구 100번지</td>
+          
+        </tr>
+        <tr>
+          <td>사람3</td>
+          
+          <td>대구 중구 300번지</td>
+          <td><img src="joao_neves.jpg" alt=""></td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="resume.html"><img src="이동.png" alt="가즈아"></a>
+    <table >
+      <thead>
+        <colgroup>
+        <col style="width: 200;">
+        <col style="width: 250;">
+        <col style="width: 300;">
+        </colgroup>
+      <tr>
+        <th>종류</th>
+        <th>설명</th>
+        <th>용도</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gif</td>
+        <td>간단한 애니메이션을 지원합니다.</td>
+        <td>간단한 애니메이션이나 아이콘</td>
+      </tr>
+      <tr>
+        <td>JPF/JPEG </td>
+        <td>소해상도 사진을 작은 파일 크기로 압축</td>
+        <td>사진이나 그래픽</td>
+      </tr>
+      <tr>
+        <td>PNG</td>
+        <td>투명배경을 지원합니다.</td>
+        <td>화질 저하 없이 투명 배경이 필요한 그래픽</td>
+      </tr>
+      <tr>
+        <td>WebP</td>
+        <td>GIF와 JPG,PNG의 장점을 하나로</td>
+        <td>고해상도의 이미지를 작은 파일 크리고 제공</td>
+      </tr>
+    </tbody>
+    </table>
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
