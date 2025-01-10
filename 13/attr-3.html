@@ -21,7 +21,19 @@
 		}
 
 		/* Do it! class 속성 값에 button이 포함된 요소에 스타일 지정하기 */
-
+		/* 주석하나 마다 모든 결과가 다르다 */
+		/* .button { 							
+			background-color: red;
+		} */
+		ul a[class~="button"] {
+			border: 2px dotted yellow
+		}
+		/* a[class~="button"] {
+			border: 2px dotted yellow
+		} */
+		/* a[class ="button"] {
+			border: 2px dotted yellow
+		} */
 </style>
 </head>
 <body>
@@ -31,5 +43,6 @@
 		<li><a href="#" class="button">메뉴 3</a></li>
 		<li><a href="#" class="flat button" >메뉴 4</a></li>
 	</ul>
+	<li><a href="#" class="flat button" >메뉴 4</a></li>
   </body>
  </html>

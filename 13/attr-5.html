@@ -17,6 +17,12 @@
 			color: blue;
 			text-decoration: none;
 		}
+		a[title ^= en] {
+			background-color: yellow;
+		}
+		a[title $= se] {
+			background-color: red;
+		}
 
 		/* Do it! 속성 값의 시작 부분이 일치하는 요소에 스타일 지정하기 */
 
@@ -30,5 +36,12 @@
 		<li><a href="#" title="japanese">일본어</a></li>
 		<li><a href="#" title="chinese">중국어</a></li>
 	</ul>
+	<script>
+		//let oop = document.querySelector('a[title |=en]').innerHTML
+		let oopP = document.querySelector('a[title ^=en]').inner
+	
+		//console.log(oop+"는 라라랄");
+		console.log(oopP+"는 ㅏ라라라라라");
+	</script>
   </body>
  </html>

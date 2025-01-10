@@ -96,6 +96,9 @@
       font-size: 13px;
       width: 110px;
     }
+    #signup input[type="radio"]:checked +label {
+      color: #f00;
+    }
 
     /* Do it! 라디오 버튼을 클릭했을 때 label 스타일 지정하기 */
 
@@ -142,5 +145,12 @@
       <button type="submit"> 제출 </button> 
     </form>
   </div>
+  <script>
+    // let idd = document.querySelector('input[radio="checked"]')
+    // let iddo = document.querySelector('input[radio]').value
+    // console.log(iddo);
+    // iddo.addEventListener('changed',function(){console.log(idd); })
+    // console.log(idd);    
+  </script>
 </body>
 </html>

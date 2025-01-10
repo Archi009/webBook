@@ -67,3 +67,20 @@ body {
 #signup input[readonly] {  /* 읽기 전용 필드의 스타일 */
 	border:none;
 }
+
+#signup fieldset:last-of-type{
+	margin-bottom: 0;
+	border: none;
+}
+#signup button:hover{
+	background-color: #222;
+	color: #fff;
+
+}
+#signup input:not([type=radio], [readonly]){
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font: 13px;
+	padding: 5px;
+	width: 200px;
+}

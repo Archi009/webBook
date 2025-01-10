@@ -76,12 +76,12 @@
 
     /* Do it!  :not 선택자를 사용해 텍스트 필드 선택하기 */
     /* 아래 코드를 수정해 보세요.  */
-    #signup input[type=text], input[type=tel] {
+    /* #signup input[type=text], input[type=tel] {
       border: 1px solid #ccc;
       border-radius: 3px;
       padding: 5px;
       width: 200px;
-    }  
+    }   */
 
     #signup button {	
       border: 1px solid #222;
@@ -102,6 +102,12 @@
     #signup input:checked + label {  
       color:red;  /* 글자색 */
       font-weight:bold;  /* 글자 굵게 */
+    }
+    #signup input:not([type=radio]){
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 5px;
+      width: 200px;
     }
   </style>
 </head>
