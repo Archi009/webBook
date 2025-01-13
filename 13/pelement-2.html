@@ -20,7 +20,16 @@
     }
 
     /* Do it! 가상 요소를 사용해 내용/스타일 추가하기 */
-    
+    .container h1::before {
+      content: "*";
+      padding-right: 5px;
+      color: rebeccapurple;
+    }
+    .container h1::after {
+      content: "🎉";
+      margin-left: 10px;
+      
+    }
   </style>
 </head>
 <body>

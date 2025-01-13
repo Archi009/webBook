@@ -23,14 +23,17 @@
       text-decoration: none;
       color: #fff;
       padding: 0.4rem 0;      
-      transition: 0.3s
+      /* transition은 CSS 속성변경 애니메이션 속도를 조적ㄹ한다 */
+      transition: 0.3s;
     }
     nav a:hover {
       color: #ff7a18;
     }
 
     /* Do it! :has 가상 선택자 사용하기 */
+    /* a태그에 호버가 있고 hover선택자가 적용 되지 않는 링크에 스타일 적용 */
     nav:has(a:hover) a:not(:hover) {
+      /* opacity 불투명 */
       opacity: 0.3;
     }
   </style>

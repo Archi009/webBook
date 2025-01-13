@@ -21,7 +21,20 @@
     }
 
     /* Do it! 단락의 첫번째 글자에 스타일 지정하기 */
-    
+    .container p::first-letter {
+      /* em 태그의 n배 크기로 설정한다 */
+      font-size: 2em;
+      font-weight: bold;
+      background-color: beige ;
+      border-radius: 25%;
+      
+    }
+    .container p::first-line {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+
   </style>
 </head>
 <body>
