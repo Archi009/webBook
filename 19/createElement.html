@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- createElement.html -->
+  친구이름 : <input type="text" name="friendName">
+  <button>친구추가</button>
+
+  <ul id="friendList">
+    <li>홍길동<button>삭제</button></li>
+  </ul>
+
+  <script>
+    //친구추가 버튼 클릭시 사용자 입력값을 하위목록으로 추가
+    document.querySelector('button').addEventListener('click', function () {
+      let val = document.querySelector('input[name="friendName"]').value
+      let btn = document.createElement('button');
+      btn.innerHTML = '삭제'
+      if (!val) {
+        alert('이름을 입력하세요!!');
+        return;
+      }
+
+      let nod = document.createElement('li');
+      // let txt = document.createTextNode(val);
+      // nod.appendChild(txt);
+      nod.innerHTML = val;
+      nod.appendChild(btn);
+      btn.addEventListener('click', function (e) {
+        console.log(e);
+        // e.target.remove()
+        let result = confirm("요소를 삭제하시겠습니까?")
+        if (result == true) {
+          nod.remove();
+        } else {
+          alert("삭제를 취소했습니다.");
+        }
+
+      });
+
+
+      document.querySelector('#friendList').appendChild(nod)
+      document.querySelector('input[name="friendName"]').value = ''
+      console.log(val);
+    })
+  </script>
+</body>
+
+</html>

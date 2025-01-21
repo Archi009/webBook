@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>DOM Tree 알아보기</title>
 </head>
+
 <body>
   <h1>Do it!</h1>
-  <img src="images/doit.jpg" alt="공부하는 이미지">
+  <div>
+    <img src="images/doit.gif" alt="공부하는 이미지">
+  </div>
+  <script>
+    //querySelectorAll은 해당되는 모든 요소를 가져온다. 그게 한 개건 뭐건 배열로!
+    let children = document.querySelectorAll('body')[0].children;
+    let parent = document.querySelectorAll('body')[0].parentElement;
+    console.log(children);
+    console.log(parent);
+    
+    children = document.querySelector('body > div > img');
+    console.log(children);
+
+  </script>
 </body>
+
 </html>
